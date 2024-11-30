@@ -5,6 +5,7 @@ import type { Colors } from 'styles/theme'
 
 export const Section = styled.section<{ $backgroundColor: keyof Colors }>`
   width: 100%;
+  padding: 82px 0;
 
   ${({ $backgroundColor }) =>
     $backgroundColor &&

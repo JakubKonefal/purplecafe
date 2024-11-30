@@ -22,6 +22,7 @@ export const colors = {
   white: '#ffffff',
   brown: '#d4ccc4',
   gray: '#7d6f63e3',
+  light: '#F2E4F5DE',
 } as const
 
 export type Colors = typeof colors

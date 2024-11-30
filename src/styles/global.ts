@@ -22,7 +22,7 @@ const Global = css`
   }
 
   body {
-    font-family: IvyEpic, Arial, Helvetica, sans-serif;
+    font-family: 'VarelaRound', sans-serif;
   }
 
   h1,
@@ -31,13 +31,25 @@ const Global = css`
   h4,
   h5,
   h6 {
-    font-family: Rubik, sans-serif;
+    font-family: 'VarelaRound', sans-serif;
+  }
+
+  a {
+    display: block;
+    cursor: pointer;
+  }
+
+  button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
   }
 `
 
 const GlobalStyles = createGlobalStyle`
     ${Normalize}
-    ${Global} 
+    ${Global}
 `
 
 export default GlobalStyles

@@ -27,7 +27,7 @@ export const Container = styled.div<ContainerProps>`
       case 'full':
         return 'initial'
       default: // normal
-        return `1220px`
+        return `930px`
     }
   }};
 
