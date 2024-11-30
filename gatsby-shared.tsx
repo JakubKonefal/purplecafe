@@ -1,5 +1,4 @@
 import { GatsbyBrowser, GatsbySSR } from 'gatsby'
-import { Provider as StoreProvider } from 'jotai'
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 
@@ -17,7 +16,7 @@ export const wrapRootElement: WrapRootElement = ({ element }) => (
   <ThemeProvider theme={theme}>
     {/* NOTE: Breakpoint context/provider is disabled by default. Think twice is you really need it. */}
     {/* <BreakpointsProvider>{element}</BreakpointsProvider> */}
-    <StoreProvider store={store}>{element}</StoreProvider>
+    {element}
   </ThemeProvider>
 )
 
