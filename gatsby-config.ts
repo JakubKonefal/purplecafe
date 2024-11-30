@@ -157,7 +157,7 @@ const config: GatsbyConfig = {
         background_color: `#e7d0ff`,
         theme_color: `#e7d0ff`,
         display: `minimal-ui`,
-        icon: `src/assets/icons/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/icons/favicon.png`, // This path is relative to the root of the site.
       },
     },
     {

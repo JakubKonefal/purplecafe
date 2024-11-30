@@ -9,6 +9,8 @@ import { generateArrayOfElements } from 'utils/object'
 import type { BreakpointValue, TypedOmit } from 'utils/types'
 
 import {
+  Dot,
+  Dots,
   StyledSwiper,
   StyledSwiperSlide,
   StyledSwiperWrapper,
@@ -39,6 +41,7 @@ type SwiperProps<T> = {
   swiperOptions?: TypedOmit<SwiperOptions, 'modules' | 'initialSlide'>
 
   withNavigation?: boolean
+  withDots?: boolean
   navigationPositionY?: `${number}%`
   withAutoplay?: boolean
 
@@ -108,6 +111,7 @@ export const Swiper = <T,>({
   overflow = false,
   overscroll = false,
   withAutoplay = false,
+  withDots,
   slideOnClick = false,
   preventDefaultOnSlideClick = false,
   initialSlide = null,
@@ -214,6 +218,13 @@ export const Swiper = <T,>({
                 </StyledSwiperSlide>
               ))}
         </StyledSwiper>
+        {withDots && (
+          <Dots>
+            {items.map((_, index) => (
+              <Dot $active={swiper?.realIndex === index} />
+            ))}
+          </Dots>
+        )}
       </StyledSwiperWrapper>
     </SwiperWrapper>
   )

@@ -22,6 +22,34 @@ export const StyledSwiperWrapper = styled.div`
   overscroll-behavior-x: none;
 `
 
+export const Dots = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 10px;
+  margin-top: 20px;
+`
+
+export const Dot = styled.div<{ $active: boolean }>`
+  width: 7px;
+  min-width: 7px;
+  height: 7px;
+  min-height: 7px;
+  border-radius: 50%;
+  background-color: ${({ theme }) => theme.colors.gray};
+
+  ${({ $active }) =>
+    $active &&
+    css`
+      width: 8px;
+      min-width: 8px;
+      height: 8px;
+      min-height: 8px;
+      background-color: #510433;
+    `}
+`
+
 export const StyledSwiper = styled(Swiper)<{
   $overflow: BreakpointValue<boolean>
 }>`
