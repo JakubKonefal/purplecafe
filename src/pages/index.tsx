@@ -43,7 +43,7 @@ Zostało już dowiedzione naukowo, że <strong>zrelaksowany umysł uczy się lep
       <AboutMe
         title="O mnie"
         subtitle="(Who's the barista here?)"
-        content="Hello you :) <br/>Nazywam się Asia Konefał i uczę angielskiego poprzez konwersacje. <br/>Jestem magistrem filologii angielskiej Uniwersytetu Rzeszowskiego<br/>
+        content="<strong>Hello you :)</strong> <br/>Nazywam się Asia Konefał i uczę angielskiego poprzez konwersacje. <br/>Jestem magistrem filologii angielskiej Uniwersytetu Rzeszowskiego<br/>
 
 i mam doświadczenie pracy w szkole językowej stacjonarnie oraz online, jak i praktyki własnych zajęć.<br/>
 

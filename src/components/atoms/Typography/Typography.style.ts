@@ -95,6 +95,10 @@ export const Color = styled.span<{ $color: ThemeColor }>`
   color: ${({ theme, $color }) => theme.colors[$color]};
 `
 
+export const Body14 = css`
+  font-size: ${rem(14)};
+`
+
 export const Body15 = css`
   font-size: ${rem(15)};
 `
