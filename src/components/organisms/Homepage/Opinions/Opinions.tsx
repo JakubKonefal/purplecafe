@@ -5,6 +5,7 @@ import * as S from './Opinions.style'
 type OpinionProps = {
   description: string
   clientName: string
+  clientNote?: string
 }
 
 export type OpinionsProps = {
