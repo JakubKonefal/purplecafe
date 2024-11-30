@@ -21,7 +21,6 @@ type TextProps = Transienty<
 export const Text = styled.p<TextProps>`
   cursor: ${({ $cursor }) => $cursor ?? 'inherit'};
 
-  line-height: initial;
   text-transform: ${({ $transform }) => $transform ?? 'none'};
   text-decoration: none;
   font-weight: 400;
@@ -98,12 +97,10 @@ export const Color = styled.span<{ $color: ThemeColor }>`
 
 export const Body15 = css`
   font-size: ${rem(15)};
-  line-height: normal;
 `
 
 export const Body16 = css`
-  font-size: ${rem(14)};
-  line-height: normal;
+  font-size: ${rem(16)};
 `
 
 export const Body18 = css`
@@ -131,8 +128,14 @@ export const Body30 = css`
   line-height: ${rem(36)};
 `
 
+export const Body34 = css`
+  font-size: ${rem(34)};
+  line-height: ${rem(40)};
+`
+
 export const HeadingLobster = css`
   font-size: ${rem(80)};
   line-height: ${rem(100)};
-  font-weight: 500;
+  font-style: italic;
+  font-family: 'Lobster', cursive;
 `

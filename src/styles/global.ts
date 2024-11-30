@@ -30,8 +30,12 @@ const Global = css`
   h3,
   h4,
   h5,
-  h6 {
+  h6,
+  p,
+  span {
+    line-height: 1.85;
     font-family: 'VarelaRound', sans-serif;
+    margin: 0;
   }
 
   a {
@@ -44,6 +48,15 @@ const Global = css`
     border: none;
     background: none;
     cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  li {
+    margin: 0;
   }
 `
 

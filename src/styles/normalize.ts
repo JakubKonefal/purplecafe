@@ -102,7 +102,6 @@ export default css`
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 2.25rem;
-    line-height: 1.1;
   }
   mark {
     background-color: #ff0;
@@ -114,7 +113,6 @@ export default css`
   sub,
   sup {
     font-size: 75%;
-    line-height: 0;
     position: relative;
     vertical-align: baseline;
   }
@@ -279,7 +277,6 @@ export default css`
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1.62671rem;
-    line-height: 1.1;
   }
   h3 {
     margin-left: 0;
@@ -294,7 +291,6 @@ export default css`
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1.38316rem;
-    line-height: 1.1;
   }
   h4 {
     margin-left: 0;
@@ -309,7 +305,6 @@ export default css`
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1rem;
-    line-height: 1.1;
   }
   h5 {
     margin-left: 0;
@@ -324,7 +319,6 @@ export default css`
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 0.85028rem;
-    line-height: 1.1;
   }
   h6 {
     margin-left: 0;
@@ -339,7 +333,6 @@ export default css`
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 0.78405rem;
-    line-height: 1.1;
   }
   hgroup {
     margin-left: 0;
@@ -411,7 +404,7 @@ export default css`
     margin-top: 0;
     margin-bottom: 1.45rem;
     font-size: 0.85rem;
-    line-height: 1.42;
+
     background: hsla(0, 0%, 0%, 0.04);
     border-radius: 3px;
     overflow: auto;
@@ -428,7 +421,7 @@ export default css`
     padding-top: 0;
     margin-bottom: 1.45rem;
     font-size: 1rem;
-    line-height: 1.45rem;
+
     border-collapse: collapse;
     width: 100%;
   }
@@ -527,15 +520,12 @@ export default css`
   }
   code {
     font-size: 0.85rem;
-    line-height: 1.45rem;
   }
   kbd {
     font-size: 0.85rem;
-    line-height: 1.45rem;
   }
   samp {
     font-size: 0.85rem;
-    line-height: 1.45rem;
   }
   abbr {
     border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
@@ -581,7 +571,6 @@ export default css`
   }
   pre code {
     background: none;
-    line-height: 1.42;
   }
   code:before,
   code:after,
