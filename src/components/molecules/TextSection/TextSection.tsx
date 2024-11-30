@@ -44,6 +44,7 @@ export const TextSection: React.FC<TextSectionProps> = ({
             $base={Body18}
             $xl={Body20}
             $align="center"
+            $margin="6px 0 0"
             dangerouslySetInnerHTML={{ __html: subtitle }}
           />
         </S.StyledFlex>

@@ -21,6 +21,7 @@ export const colors = {
   black: '#000000',
   white: '#ffffff',
   white100: '#FFFBF4',
+  heading: '#483351',
   brown: '#d4ccc4',
   gray: '#7d6f63e3',
   light: '#F2E4F5DE',

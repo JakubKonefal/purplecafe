@@ -40,6 +40,10 @@ export const StyledContent = styled(Text)`
     }
   }
 
+  h2 {
+    ${Body16}
+  }
+
   span.bigger18 {
     ${Body18}
 
@@ -67,10 +71,6 @@ export const StyledContent = styled(Text)`
   span.small {
     display: inline-block;
     margin-top: 8px;
-  }
-
-  h2 {
-    ${Body16}
   }
 
   h3 {

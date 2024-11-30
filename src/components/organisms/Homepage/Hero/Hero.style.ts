@@ -6,20 +6,30 @@ export const Header = styled.header`
   position: relative;
   width: 100%;
   background-color: ${({ theme }) => theme.colors.brown};
-  height: 100svh;
+  overflow: hidden;
+
+  ${media.md.min} {
+    height: 100svh;
+  }
 `
 
 export const ImgWrapper = styled.div`
   width: 100%;
-  height: 100svh;
 
+  ${media.md.min} {
+    height: 100svh;
+  }
   ${media.lg.min} {
     min-height: 740px;
   }
+  max-width: 1200px;
 
   .gatsby-image-wrapper {
     height: 100%;
     position: static;
+  }
+
+  ${media.xl.min} {
   }
 `
 
@@ -30,11 +40,20 @@ export const TextWrapper = styled.div`
   justify-content: center;
   background-color: ${({ theme }) => theme.colors.light};
   padding: 46px 16px;
-  width: 50%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 800px;
 
   position: absolute;
   top: 25%;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: 650px) {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    width: 90%;
+    padding: 26px 16px 46px;
+  }
 `
