@@ -1,4 +1,4 @@
-import { GatsbyNode } from "gatsby"
+import { GatsbyNode } from 'gatsby'
 
 /**
  * Implement Gatsby's Node APIs in this file.

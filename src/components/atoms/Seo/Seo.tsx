@@ -26,13 +26,12 @@ export const Seo: React.FC<SeoProps> = ({
   twitterTitle,
   twitterDescription,
   twitterImage,
-  robots =  'noindex, nofollow',
+  robots = 'noindex, nofollow',
 }) => {
-
   const siteMetadata = {
     title: 'title',
     description: 'description',
-    author: "Jakub Konefał"
+    author: 'Jakub Konefał',
   }
 
   const metaDescription = description || siteMetadata.description

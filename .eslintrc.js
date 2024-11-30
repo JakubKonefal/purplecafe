@@ -1,8 +1,6 @@
 module.exports = {
   extends: ['airbnb', 'airbnb-typescript', 'plugin:prettier/recommended'],
-  "plugins": [
-    "react-hooks"
-  ],
+  plugins: ['react-hooks'],
   parserOptions: {
     project: './tsconfig.json',
   },
@@ -17,8 +15,8 @@ module.exports = {
     es6: true,
   },
   rules: {
-    'react-hooks/rules-of-hooks': "error",
-    'react-hooks/exhaustive-deps': "off",
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'off',
     'react/prop-types': 'off', // Disable prop-types as we use TypeScript for type checking
     'react/require-default-props': 'off', // Disable requiring default prop values for optional props
     'react/no-unescaped-entities': 'off', // Disable unescaped entities checking
@@ -41,7 +39,7 @@ module.exports = {
     'import/order': 'off', // Disable import order
     'jsx-a11y/click-events-have-key-events': 'warn', // Warn about click events without key events
     'jsx-a11y/no-static-element-interactions': 'warn', // Warn about static elements
-    "no-restricted-exports": "warn",
+    'no-restricted-exports': 'warn',
     'prettier/prettier': [
       // Enable prettier rules
       'error',

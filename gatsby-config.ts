@@ -3,13 +3,11 @@ import { GatsbyConfig } from 'gatsby'
 import netlifyAdapter from 'gatsby-adapter-netlify'
 import path from 'path'
 
-
 dotenv.config({
   path: `.env.${
     process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || 'development'
   }`,
 })
-
 
 const GATSBY_REQUIRED_RULES: string = path.join(
   process.cwd(),

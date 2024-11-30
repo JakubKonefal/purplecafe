@@ -8,16 +8,11 @@ import { Layout } from 'views/Layout'
 
 import media from 'styles/media'
 
-const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({
-  data,
-}) => {
-
+const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
   return (
     <Layout>
       <Seo title="Gatsby Starter" />
-      <Container>
- sdas
-      </Container>
+      <Container>sdas</Container>
     </Layout>
   )
 }
