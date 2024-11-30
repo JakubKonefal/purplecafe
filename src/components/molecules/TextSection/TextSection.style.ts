@@ -14,6 +14,10 @@ import type { Colors } from 'styles/theme'
 
 export const Section = styled.section<{ $backgroundColor: keyof Colors }>`
   width: 100%;
+  ${media.md.max} {
+    padding: 40px 0;
+  }
+
   padding: 82px 0;
 
   ${({ $backgroundColor }) =>
