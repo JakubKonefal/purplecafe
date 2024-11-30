@@ -5,6 +5,8 @@ import { keys } from 'utils/object'
 import Normalize from 'styles/normalize'
 import { colors } from 'styles/theme'
 
+import { media } from './media'
+
 const Global = css`
   :root {
     ${keys(colors)
@@ -33,6 +35,10 @@ const Global = css`
   h6,
   p,
   span {
+    ${media.md.max} {
+      line-height: 1.775;
+    }
+
     line-height: 1.85;
     font-family: 'VarelaRound', sans-serif;
     margin: 0;
