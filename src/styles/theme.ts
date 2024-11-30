@@ -17,14 +17,11 @@ export const colors = {
   secondary: '#2980b9',
   danger: '#e74c3c',
   success: '#2ecc71',
-  light: '#FEF6E2',
-  dark: '#242424',
   text: '#2D1C38',
-  white: '#FFFFFF',
-  white100: '#fffbf4',
   black: '#000000',
-  gray: '#E8E7E7',
-  lightgray: '#F8F8F8',
+  white: '#ffffff',
+  brown: '#d4ccc4',
+  gray: '#7d6f63e3',
 } as const
 
 export type Colors = typeof colors
