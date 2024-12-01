@@ -96,7 +96,6 @@ export const Opinions: React.FC<OpinionsProps> = ({
                 [theme.breakpoints.md]: { spaceBetween: 20 },
               },
             }}
-            withAutoplay
             withDots
           />
           <S.Dots>
