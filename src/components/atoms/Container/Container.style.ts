@@ -14,7 +14,7 @@ export const Container = styled.div<ContainerProps>`
   padding-right: 1rem;
   width: calc(100% - 2rem);
 
-  box-sizing: content-box;
+  box-sizing: border-box;
 
   max-width: ${({ $variant = 'normal' }) => {
     switch ($variant) {
