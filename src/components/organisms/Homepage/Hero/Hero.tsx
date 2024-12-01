@@ -8,6 +8,8 @@ import {
   Text,
 } from 'components/atoms/Typography'
 
+import { scrollToSection } from 'utils/scrollTo'
+
 import { LazyImageType } from 'types/page'
 
 import * as S from './Hero.style'
@@ -36,8 +38,18 @@ export const Hero: React.FC<HeroProps> = ({ title, subtitle, img }) => {
             as="h2"
             $color="heading"
             $base={Body25}
+            $margin={{
+              base: '0 0 16px',
+            }}
             dangerouslySetInnerHTML={{ __html: subtitle }}
           />
+          <S.Button
+            onClick={() => {
+              scrollToSection('#contact')
+            }}
+          >
+            Porozmawiajmy!
+          </S.Button>
         </S.TextWrapper>
       </S.ImgWrapper>
     </S.Header>

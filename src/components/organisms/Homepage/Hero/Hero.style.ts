@@ -57,3 +57,20 @@ export const TextWrapper = styled.div`
     padding: 26px 16px 46px;
   }
 `
+
+export const Button = styled.button`
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #a075cc;
+  color: ${({ theme }) => theme.colors.white};
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #8e5cb5;
+  }
+
+  ${media.md.max} {
+    padding: 7px 14px;
+    font-size: 15px;
+  }
+`
