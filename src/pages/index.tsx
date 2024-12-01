@@ -17,7 +17,10 @@ import { Layout } from 'views/Layout'
 const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
   return (
     <Layout>
-      <Seo title="Purple Cafe English | Strona Główna" />
+      <Seo
+        title="Purple Cafe English | Strona Główna"
+        description="Zajęcia z języka angielskiego - Joanna Konefał, Polska, Rzeszów, konwersacje językowe. Purple Cafe English"
+      />
       <Hero
         title="Purple Cafe English"
         subtitle="konwersacje językowe"
