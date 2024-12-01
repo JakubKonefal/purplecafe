@@ -117,6 +117,10 @@ export const Body20 = css`
   line-height: ${rem(24)};
 `
 
+export const Body26 = css`
+  font-size: ${rem(26)};
+`
+
 export const Body20PatrickHand = css`
   font-size: ${rem(20)};
   line-height: ${rem(27)};

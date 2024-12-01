@@ -18,7 +18,7 @@ export const Section = styled.section<{ $backgroundColor: keyof Colors }>`
     padding: 40px 0;
   }
 
-  padding: 82px 0;
+  padding: 80px 0;
 
   ${({ $backgroundColor }) =>
     $backgroundColor &&
