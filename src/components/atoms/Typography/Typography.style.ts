@@ -121,9 +121,10 @@ export const Body26 = css`
   font-size: ${rem(26)};
 `
 
-export const Body20PatrickHand = css`
-  font-size: ${rem(20)};
-  line-height: ${rem(27)};
+export const Body22PatrickHand = css`
+  font-size: ${rem(22)};
+  font-family: 'PatrickHand', cursive;
+  letter-spacing: 0.5px;
 `
 
 export const Body25 = css`

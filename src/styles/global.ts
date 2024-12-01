@@ -64,6 +64,10 @@ const Global = css`
   li {
     margin: 0;
   }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
 `
 
 const GlobalStyles = createGlobalStyle`
