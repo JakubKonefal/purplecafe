@@ -26,7 +26,7 @@ export const Seo: React.FC<SeoProps> = ({
   twitterTitle,
   twitterDescription,
   twitterImage,
-  robots = 'noindex, nofollow',
+  robots = 'index, follow',
 }) => {
   const siteMetadata = {
     title: 'title',
