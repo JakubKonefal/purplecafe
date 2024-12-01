@@ -14,6 +14,7 @@ import {
 } from 'components/atoms/Typography'
 
 import { Swiper } from 'components/molecules/Swiper'
+import { useSwiper } from 'components/molecules/Swiper/'
 import { StyledFlex } from 'components/molecules/TextSection/TextSection.style'
 
 import theme from 'styles/theme'
@@ -37,9 +38,11 @@ export const Opinions: React.FC<OpinionsProps> = ({
   subtitle,
   opinions,
 }) => {
+  const { activeSlide, onSwiperSlideChange } = useSwiper()
+
   return (
     <S.Section>
-      <Container>
+      <S.StyledContainer>
         <Flex $direction="column" $fullWidth $align="center">
           <StyledFlex $fullWidth $direction="column" $align="center">
             <Text
@@ -61,6 +64,7 @@ export const Opinions: React.FC<OpinionsProps> = ({
           <Swiper
             items={opinions}
             extractKey={(_, index) => `flat-${index + 1}`}
+            onSlideChange={(_, index) => onSwiperSlideChange(index)}
             renderItem={(flat) => (
               <Flex $direction="column" $justify="center" $fullHeight>
                 <Text
@@ -87,22 +91,21 @@ export const Opinions: React.FC<OpinionsProps> = ({
             )}
             swiperOptions={{
               slidesPerView: 1,
-              spaceBetween: 8,
+              spaceBetween: 12,
               breakpoints: {
-                [theme.breakpoints.md]: { spaceBetween: 16 },
+                [theme.breakpoints.md]: { spaceBetween: 20 },
               },
             }}
-            // withAutoplay
-            // overflow
+            withAutoplay
             withDots
           />
-          {/* <S.StyledContent
-            $base={Body14}
-            $align="center"
-            dangerouslySetInnerHTML={{ __html: content }}
-          /> */}
+          <S.Dots>
+            {opinions.map((_, index) => (
+              <S.Dot key={`dot-${index + 1}`} $active={activeSlide === index} />
+            ))}
+          </S.Dots>
         </Flex>
-      </Container>
+      </S.StyledContainer>
     </S.Section>
   )
 }

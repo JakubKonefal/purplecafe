@@ -9,8 +9,6 @@ import { generateArrayOfElements } from 'utils/object'
 import type { BreakpointValue, TypedOmit } from 'utils/types'
 
 import {
-  Dot,
-  Dots,
   StyledSwiper,
   StyledSwiperSlide,
   StyledSwiperWrapper,
@@ -159,6 +157,8 @@ export const Swiper = <T,>({
   }
 
   useEffect(() => {
+    console.log(swiper?.realIndex)
+
     if (swiper && initialSlide && initialSlide > -1) {
       swiper.slideTo(initialSlide, 0, false)
     } else if (swiper) {
@@ -193,7 +193,7 @@ export const Swiper = <T,>({
             ? generateArrayOfElements(4, (index) =>
                 renderPlaceholder ? (
                   <StyledSwiperSlide
-                    key={index}
+                    key={`index-${index}`}
                     $autoWidth={currentSlidesPerView === 'auto'}
                   >
                     {renderPlaceholder()}
@@ -202,7 +202,7 @@ export const Swiper = <T,>({
               )
             : items.map((item, index) => (
                 <StyledSwiperSlide
-                  key={extractKey(item, index)}
+                  key={`slide-${index + 1}`}
                   $autoWidth={currentSlidesPerView === 'auto'}
                   onClick={(e) => onSlideClick(e, index)}
                 >
@@ -218,13 +218,6 @@ export const Swiper = <T,>({
                 </StyledSwiperSlide>
               ))}
         </StyledSwiper>
-        {withDots && (
-          <Dots>
-            {items.map((_, index) => (
-              <Dot $active={swiper?.realIndex === index} />
-            ))}
-          </Dots>
-        )}
       </StyledSwiperWrapper>
     </SwiperWrapper>
   )

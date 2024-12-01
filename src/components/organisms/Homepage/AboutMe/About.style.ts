@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+import { Container } from 'components/atoms/Container'
 import { Flex } from 'components/atoms/Spacing'
 import { Body16, Body18, Body20, Text } from 'components/atoms/Typography'
 
@@ -17,6 +18,7 @@ export const Section = styled.section`
     padding: 80px 0;
   }
 `
+
 export const StyledFlex = styled(Flex)`
   margin-bottom: 20px;
   ${media.md.min} {
