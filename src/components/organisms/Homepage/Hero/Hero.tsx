@@ -43,13 +43,6 @@ export const Hero: React.FC<HeroProps> = ({ title, subtitle, img }) => {
             }}
             dangerouslySetInnerHTML={{ __html: subtitle }}
           />
-          <S.Button
-            onClick={() => {
-              scrollToSection('#contact')
-            }}
-          >
-            Porozmawiajmy!
-          </S.Button>
         </S.TextWrapper>
       </S.ImgWrapper>
     </S.Header>

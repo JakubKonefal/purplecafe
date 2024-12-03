@@ -29,7 +29,7 @@ export const StyledFlex = styled(Flex)`
 export const ImgWrapper = styled.div`
   position: relative;
   width: 100%;
-  max-width: 220px;
+  max-width: 190px;
   border-radius: 50%;
   margin-bottom: 20px;
 

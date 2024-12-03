@@ -7,29 +7,20 @@ export const Header = styled.header`
   width: 100%;
   background-color: ${({ theme }) => theme.colors.brown};
   overflow: hidden;
-
-  ${media.md.min} {
-    height: 100svh;
-  }
 `
 
 export const ImgWrapper = styled.div`
   width: 100%;
-
-  ${media.md.min} {
-    height: 100svh;
-  }
-  ${media.lg.min} {
-    min-height: 740px;
-  }
-  max-width: 1200px;
-
   .gatsby-image-wrapper {
     height: 100%;
     position: static;
   }
 
-  ${media.xl.min} {
+  ${media.lg.min} {
+    height: 1000px;
+    .gatsby-image-wrapper {
+      transform: scale(0.8);
+    }
   }
 `
 
@@ -54,7 +45,7 @@ export const TextWrapper = styled.div`
 
   @media (min-width: 768px) {
     width: 90%;
-    padding: 26px 16px 46px;
+    padding: 18px 16px 28px;
   }
 `
 
