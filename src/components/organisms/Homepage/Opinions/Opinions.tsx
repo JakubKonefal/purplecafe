@@ -19,6 +19,9 @@ import { StyledFlex } from 'components/molecules/TextSection/TextSection.style'
 
 import theme from 'styles/theme'
 
+import { ReactComponent as ArrowLeft } from 'assets/icons/arrow-left.svg'
+import { ReactComponent as ArrowRight } from 'assets/icons/arrow-right.svg'
+
 import * as S from './Opinions.style'
 
 type OpinionProps = {
@@ -38,7 +41,14 @@ export const Opinions: React.FC<OpinionsProps> = ({
   subtitle,
   opinions,
 }) => {
-  const { activeSlide, onSwiperSlideChange } = useSwiper()
+  const {
+    activeSlide,
+    onSwiperSlideChange,
+    nextSlide,
+    prevSlide,
+    setActiveSlide,
+    onSwiperUpdate,
+  } = useSwiper()
 
   return (
     <S.Section id="opinie">
@@ -65,6 +75,7 @@ export const Opinions: React.FC<OpinionsProps> = ({
             items={opinions}
             extractKey={(_, index) => `flat-${index + 1}`}
             onSlideChange={(_, index) => onSwiperSlideChange(index)}
+            onSwiper={onSwiperUpdate}
             renderItem={(flat) => (
               <Flex $direction="column" $justify="center" $fullHeight>
                 <Text
@@ -98,12 +109,23 @@ export const Opinions: React.FC<OpinionsProps> = ({
             }}
             withDots
           />
+
           <S.Dots>
             {opinions.map((_, index) => (
-              <S.Dot key={`dot-${index + 1}`} $active={activeSlide === index} />
+              <S.Dot
+                key={`dot-${index + 1}`}
+                $active={activeSlide === index}
+                onClick={() => setActiveSlide(index)}
+              />
             ))}
           </S.Dots>
         </Flex>
+        <S.ButtonLeft type="button" aria-label="w lewo" onClick={prevSlide}>
+          <ArrowLeft />
+        </S.ButtonLeft>
+        <S.ButtonRight type="button" aria-label="w prawo" onClick={nextSlide}>
+          <ArrowRight />
+        </S.ButtonRight>
       </S.StyledContainer>
     </S.Section>
   )
