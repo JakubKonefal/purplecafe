@@ -155,7 +155,7 @@ export const HeadingLobsterSmall = css`
 `
 
 export const HeadingLobster = css`
-  font-size: ${rem(80)};
+  font-size: ${rem(86)};
   line-height: ${rem(120)};
   font-family: 'Lobster', cursive;
 `

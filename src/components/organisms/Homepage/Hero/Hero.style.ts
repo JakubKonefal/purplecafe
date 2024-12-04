@@ -7,19 +7,25 @@ export const Header = styled.header`
   width: 100%;
   background-color: ${({ theme }) => theme.colors.brown};
   overflow: hidden;
+
+  ${media.md.max} {
+    margin-top: ${({ theme }) => theme.elementsSize.navbar.mobile};
+  }
+
+  ${media.md.min} {
+    height: 115vh;
+  }
 `
 
 export const ImgWrapper = styled.div`
   width: 100%;
-  .gatsby-image-wrapper {
-    height: 100%;
-    position: static;
-  }
 
   ${media.lg.min} {
-    height: 1000px;
+    margin: 0 auto;
+    width: 1050px;
+
     .gatsby-image-wrapper {
-      transform: scale(0.8);
+      transform: translateY(-5%);
     }
   }
 `
@@ -46,6 +52,12 @@ export const TextWrapper = styled.div`
   @media (min-width: 768px) {
     width: 90%;
     padding: 18px 16px 28px;
+  }
+
+  ${media.lg.min} {
+    width: 1300px;
+    top: 272px;
+    max-width: unset;
   }
 `
 

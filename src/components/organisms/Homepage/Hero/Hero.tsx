@@ -8,8 +8,6 @@ import {
   Text,
 } from 'components/atoms/Typography'
 
-import { scrollToSection } from 'utils/scrollTo'
-
 import { LazyImageType } from 'types/page'
 
 import * as S from './Hero.style'
@@ -24,8 +22,7 @@ export const Hero: React.FC<HeroProps> = ({ title, subtitle, img }) => {
   return (
     <S.Header>
       <S.ImgWrapper>
-        <LazyImage {...img} objectFit="contain" />
-
+        <LazyImage {...img} objectFit="cover" />
         <S.TextWrapper>
           <Text
             as="h1"

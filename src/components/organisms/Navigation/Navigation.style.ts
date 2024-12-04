@@ -28,8 +28,9 @@ export const Wrapper = styled.div<{ $active: boolean }>`
 export const StyledContainer = styled(Container)`
   display: flex;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100%;
 
   ${media.lg.min} {
     width: 100%;

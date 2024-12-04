@@ -41,7 +41,7 @@ export type Fonts = typeof fonts
 export const elementsSize = {
   navbar: {
     mobile: '80px',
-    desktop: '96px',
+    desktop: '80px',
   },
 }
 
