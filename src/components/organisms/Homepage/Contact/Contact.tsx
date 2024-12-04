@@ -14,7 +14,7 @@ export type ContactProps = {
 
 export const Contact: React.FC<ContactProps> = ({ phone, email, facebook }) => {
   return (
-    <S.Section id="contact">
+    <S.Section id="kontakt">
       <Container>
         <Flex $direction="column" $align="center" $gap="8px">
           <S.StyledText $base={Body22PatrickHand}>

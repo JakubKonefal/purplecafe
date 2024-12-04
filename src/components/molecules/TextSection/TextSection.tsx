@@ -16,6 +16,7 @@ import type { Colors } from 'styles/theme'
 import * as S from './TextSection.style'
 
 export type TextSectionProps = {
+  sectionId: string
   title: string
   subtitle: string
   content: string
@@ -23,13 +24,14 @@ export type TextSectionProps = {
 }
 
 export const TextSection: React.FC<TextSectionProps> = ({
+  sectionId,
   title,
   subtitle,
   content,
   background,
 }) => {
   return (
-    <S.Section $backgroundColor={background}>
+    <S.Section id={sectionId} $backgroundColor={background}>
       <Container>
         <S.StyledFlex $fullWidth $direction="column" $align="center">
           <Text

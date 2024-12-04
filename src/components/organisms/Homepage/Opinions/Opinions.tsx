@@ -41,7 +41,7 @@ export const Opinions: React.FC<OpinionsProps> = ({
   const { activeSlide, onSwiperSlideChange } = useSwiper()
 
   return (
-    <S.Section>
+    <S.Section id="opinie">
       <S.StyledContainer>
         <Flex $direction="column" $fullWidth $align="center">
           <StyledFlex $fullWidth $direction="column" $align="center">

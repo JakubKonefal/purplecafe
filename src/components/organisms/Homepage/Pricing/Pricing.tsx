@@ -7,7 +7,6 @@ import {
   Body15,
   Body18,
   Body20,
-  Body24,
   Body26,
   Body30,
   Body34,
@@ -31,7 +30,7 @@ export const Pricing: React.FC<PricingProps> = ({
   nextClasses,
 }) => {
   return (
-    <S.Section>
+    <S.Section id="cennik">
       <Container>
         <Flex $direction="column" $fullWidth $align="center">
           <Flex $fullWidth $direction="column" $align="center">

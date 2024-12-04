@@ -31,7 +31,7 @@ export const AboutMe: React.FC<AboutMeProps> = ({
   content,
 }) => {
   return (
-    <S.Section>
+    <S.Section id="o-mnie">
       <Container>
         <Flex $direction="column" $fullWidth $align="center">
           <S.StyledFlex $fullWidth $direction="column" $align="center">

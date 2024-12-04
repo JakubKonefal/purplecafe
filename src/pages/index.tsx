@@ -30,6 +30,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({ data }) => {
         }}
       />
       <TextSection
+        sectionId="dla-kogo"
         title="Dla kogo"
         subtitle="(Are you a coffee drinker?)"
         content='<span class="bigger16">Czy chciałbyś w końcu „rozgadać się" po angielsku?​​​​ <br/><br/>
@@ -116,6 +117,7 @@ Myślę, że w dużej mierze właśnie stąd mój zawód :)"
         ]}
       />
       <TextSection
+        sectionId="wiecej-o-metodzie"
         title="Więcej o metodzie"
         subtitle="(Is this tea really for me?)"
         content='<strong>GRAMATYKA</strong><br/><span class="small">Przyswajanie dla wielu problematycznej <strong>gramatyki</strong> też może odbywać się poprzez mówienie. Trochę teorii, a przy tym <strong>dużo praktyki</strong> – oto przepis na sukces :) I oczywiście powtórki! Ponieważ język jest <strong>żywym tworem</strong> trudno jest nauczyć się go praktycznie robiąc to tylko „na sucho” poprzez podręcznik i ćwiczenia. Oczywiście zadania gramatyczne mają dużo wartość, są też elementem potrzebnym. Warto jednak poszerzyć sposób myślenia o gramatyce i jej szlifowaniu. Dzięki teorii i ćwiczeniom możemy sporo zrozumieć, poznać zasady, ale nadal może zabraknąć <strong>umiejętności komunikacji,</strong> co często zdarza się po ukończeniu obowiązkowej edukacji. O ile dla niektórych ta nauka „na sucho” będzie mimo wszystko skuteczna jeśli chodzi o samo pojęcie języka, większości nadal będzie sprawiać mniejszy lub większy problem, mając szczególnie na uwadze mówienie i blokadę językową.

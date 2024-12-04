@@ -68,6 +68,10 @@ const Global = css`
     text-decoration: none;
     cursor: pointer;
   }
+
+  img {
+    margin: 0;
+  }
 `
 
 const GlobalStyles = createGlobalStyle`

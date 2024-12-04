@@ -142,6 +142,12 @@ export const Body34 = css`
   line-height: ${rem(40)};
 `
 
+export const HeadingLobsterVerySmall = css`
+  font-size: ${rem(30)};
+  line-height: normal;
+  font-family: 'Lobster', cursive;
+`
+
 export const HeadingLobsterSmall = css`
   font-size: ${rem(40)};
   line-height: ${rem(60)};

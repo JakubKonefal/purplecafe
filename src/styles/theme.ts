@@ -14,6 +14,7 @@ export type Breakpoint = keyof Breakpoints
 
 export const colors = {
   primary: '#e7d0ff',
+  primaryDark: '#b68de0',
   secondary: '#2980b9',
   danger: '#e74c3c',
   success: '#2ecc71',
@@ -37,10 +38,18 @@ export const fonts = {
 
 export type Fonts = typeof fonts
 
+export const elementsSize = {
+  navbar: {
+    mobile: '80px',
+    desktop: '96px',
+  },
+}
+
 const theme = {
   breakpoints,
   colors,
   fonts,
+  elementsSize,
 }
 
 export type Theme = typeof theme
