@@ -76,6 +76,13 @@ export const StyledContent = styled(Text)`
     display: inline-block;
     margin-top: 8px;
   }
+  span.small-word {
+    font-size: 12px;
+
+    ${media.md.min} {
+      font-size: 14px;
+    }
+  }
 
   h3 {
     ${Body20}
