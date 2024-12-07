@@ -21,13 +21,13 @@ export const Container = styled.div<ContainerProps>`
       case 'compact':
         return `700px`
       case 'slim':
-        return `920px`
+        return `965px`
       case 'wide':
         return `1440px`
       case 'full':
         return 'initial'
       default: // normal
-        return `920px`
+        return `965px`
     }
   }};
 
